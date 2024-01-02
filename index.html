@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form>
+                <h1>Create account</h1>
+                <hr>
+                <span>Use your email to SignUp</span>
+                <br><br>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email" id="upmail">
+                <br>
+                <div class="password">
+                    <div class="passimg" onclick="upimg(this)" id="p1"> <img src="images/1.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="upimg(this)" id="p2"> <img src="images/2.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="upimg(this)" id="p3"> <img src="images/3.jpeg" img height="50" class="patimg"></div>
+                    <br>
+                    <div class="passimg" onclick="upimg(this)" id="p4"> <img src="images/4.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="upimg(this)" id="p5"> <img src="images/5.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="upimg(this)" id="p6"> <img src="images/6.jpeg" img height="50" class="patimg"></div>
+                    <br>
+                    <div class="passimg" onclick="upimg(this)" id="p7"> <img src="images/7.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="upimg(this)" id="p8"> <img src="images/8.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="upimg(this)" id="p9"> <img src="images/9.jpeg" img height="50" class="patimg"></div>
+                </div>
+                <br>
+                <button onclick="signup()">Sign Up</button>
+            </form>
+
+
+        </div>
+        <div class="form-container sign-in-container">
+            <form>
+                <h1>Sign In</h1>
+                <hr>
+                <input type="email" placeholder="Email" id="inmail">
+                <!-- <input type="password" placeholder="Password"> -->
+                <br>
+                <div class="password">
+                    <div class="passimg" onclick="inimg(this)" id="p1"> <img src="images/1.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="inimg(this)" id="p2"> <img src="images/2.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="inimg(this)" id="p3"> <img src="images/3.jpeg" img height="50" class="patimg"></div>
+                    <br>
+                    <div class="passimg" onclick="inimg(this)" id="p4"> <img src="images/4.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="inimg(this)" id="p5"> <img src="images/5.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="inimg(this)" id="p6"> <img src="images/6.jpeg" img height="50" class="patimg"></div>
+                    <br>
+                    <div class="passimg" onclick="inimg(this)" id="p7"> <img src="images/7.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="inimg(this)" id="p8"> <img src="images/8.jpeg" img height="50" class="patimg"></div>
+                    <div class="passimg" onclick="inimg(this)" id="p9"> <img src="images/9.jpeg" img height="50" class="patimg"></div>
+                </div>
+                <br>
+                <button onclick="signin()">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Hi there</h1>
+                    <p>Enter your name and email to make your account</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome</h1>
+                    <p>Enter your email to Sign In</p>
+                    <br><br><br><br>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
